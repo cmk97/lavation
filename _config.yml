@@ -2,7 +2,7 @@
 # Site
 
 title: lavation
-url: ""
+url: "http://127.0.0.1:4000/lavation/"
 baseurl: "/lavation"
 google_analytics_key:
 google_maps_javascript_api_key:
