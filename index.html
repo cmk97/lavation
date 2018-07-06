@@ -13,7 +13,6 @@ subtitle: the art of cleansing
 					<li>
 						{% include product-styles.html product=product %}
 						<div class="product-details">
-							<p>{{ product.url}}</p>
 							<h4><a href="/lavation{{ product.url }}">{{ product.name }}</a></h4>
 							<div class="product-description">
 								{{ product.description_markdown | truncate: 45 | markdownify }}
