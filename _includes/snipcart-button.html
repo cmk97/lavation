@@ -6,7 +6,7 @@
 <button class="snipcart-add-item"
 	data-item-name="{{ include.product.name }}"
 	data-item-id="{{ include.product.sku }}"
-	data-item-image="{{ include.product.styles.first.image }}"
+	data-item-image="/lavation/{{ include.product.styles.first.image }}"
 	data-item-description="{{ include.product.description }}"
 	data-item-custom1-name="Size"
 	data-item-custom1-options="{{ include.product.sizes | join: '|' }}"
@@ -14,6 +14,6 @@
 	data-item-custom2-name="Color"
 	data-item-custom2-options="{{ colors }}"
 	data-item-url="{{ include.product.url }}"
-	data-item-price="{{ include.product.price }}">
+	data-item-price="{{ include.product.price }}">{{ include.product.styles.first.image }}
 	{% if include.text %}{{ include.text }}{% else %}Add to cart{% endif %}
 </button>
